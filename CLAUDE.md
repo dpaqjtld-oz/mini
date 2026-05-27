@@ -24,19 +24,20 @@ retrieves relevant regulation clauses via vector search, and streams LLM risk an
 mini/
 ├── data/
 │   └── regulations.csv      # Raw regulation data (Korean)
-├── qdrant_db/               # Qdrant local storage (auto-generated, gitignored)
-├── ingest.py                # Embed CSV data → store in Qdrant (run once)
-├── search.py                # CLI tool to test vector search
-├── api.py                   # FastAPI server - main backend (WIP)
+├── docs/
+│   ├── plan.md              # Project plan & role assignments
+│   ├── ARCHITECTURE.md      # System architecture & flowcharts
+│   ├── DATA_SCHEMA.md       # Data structure definitions
+│   ├── API_SPEC.md          # API endpoint specifications
+│   └── CODE_FLOW.md         # Code execution flow explanation
 ├── templates/
 │   └── index.html           # Frontend UI (TODO)
-├── blog/                    # Technical blog drafts
+├── qdrant_db/               # Qdrant local storage (auto-generated, gitignored)
+├── ingest.py                # Embed CSV data → store in Qdrant (run once)
+├── inspect_db.py            # CLI tool to inspect Qdrant DB contents
+├── search.py                # CLI tool to test vector search
+├── api.py                   # FastAPI server - main backend (WIP)
 ├── CLAUDE.md                # This file
-├── plan.md                  # Project plan & role assignments
-├── ARCHITECTURE.md          # System architecture & flowcharts
-├── DATA_SCHEMA.md           # Data structure definitions
-├── API_SPEC.md              # API endpoint specifications
-├── CODE_FLOW.md             # Code execution flow explanation
 └── requirements.txt         # Python dependencies
 ```
 
